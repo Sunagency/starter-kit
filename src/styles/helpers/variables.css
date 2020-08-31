@@ -1,0 +1,33 @@
+:root {
+  /*Colors*/
+  --primary-color: #0c9f4e;
+  --secondary-color: #a2cc44;
+  --dark-green: #157c44;
+  --text-color: #333333;
+  --light-text: #4f4f4f;
+  --light-grey: #f2f2f2;
+  --light-grey-1: #f5f5f5;
+  --promotion-color: #9858a2;
+  --orange: #f9a21b;
+  --white: #ffffff;
+  --font1: 'Proxima Nova', sans-serif;
+  --font2: 'Fira Sans', sans-serif;
+  --fz18: 18px;
+  --box-shadow-default: 0 4px 20px rgba(0, 0, 0, 0.1);
+
+  /*Animate*/
+  --cubic-1: cubic-bezier(0.54, -0.81, 0.57, 0.57);
+
+}
+
+/*Custom selectors*/
+@custom-selector :--hover :hover, :active;
+
+  /*Custom breakpoints*/
+@custom-media --xs-only (min-width: 320px) and (max-width: 374px);
+@custom-media --s (width >= 576px);
+@custom-media --m (width >= 768px);
+@custom-media --l (width >= 992px);
+@custom-media --el (width >= 1200px);
+
+

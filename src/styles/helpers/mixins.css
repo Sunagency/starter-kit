@@ -1,0 +1,22 @@
+@define-mixin miw $px {
+  @media (min-width: $(px)) {
+    @mixin-content ;
+  }
+}
+
+@define-mixin image-2x $image, $width, $height {
+  @media (min-resolution: 1.3dppx) {
+    background-image: url($image);
+    background-size: $width $height;
+  }
+}
+
+
+
+
+
+
+
+
+
+
