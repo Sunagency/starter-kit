@@ -26,8 +26,8 @@
   <link rel="preload" href="fonts/ProximaNova-Bold.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/ProximaNova-Regular.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/ProximaNova-Light.woff2" as="font" crossorigin="anonymous">
-  <link rel="stylesheet" href="styles/main.css">
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;700&display=swap" rel="stylesheet">
+  <!--For critical loading CSS if you need regular loading delete media and onload attribute-->
+  <link rel="stylesheet" href="styles/main.css" media="print" onload="this.media='all'">
 </head>
 <body>
 @@include("../blocks/modules/header/header.html")
@@ -38,7 +38,6 @@
 
 @@include("../blocks/modules/footer/footer.html")
 <script src="js/main.js"></script>
-<script src="js/mainPage.js"></script>
 <script src="js/vendor.js"></script>
 </body>
 </html>

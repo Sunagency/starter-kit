@@ -64,6 +64,6 @@ export const development = gulp.series('clean',
   gulp.parallel('serve'));
 
 export const prod = gulp.series('clean',
-  gulp.series(['views', 'styles', 'scripts', 'images', 'sprites', 'fonts', 'favicons']));
+  gulp.series(['views', 'styles', 'scripts', 'images', 'sprites', 'fonts', 'favicons', 'critical']));
 
 export default development;

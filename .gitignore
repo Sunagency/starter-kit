@@ -13,4 +13,3 @@ _config.yml
 node_modules
 dist
 package-lock.json
-dist

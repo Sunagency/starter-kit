@@ -32,6 +32,7 @@
     "bem-tools-core": "bem-tools/bem-tools-core",
     "bem-tools-create": "bem-tools/bem-tools-create",
     "browser-sync": "^2.23.6",
+    "critical": "2.0.4",
     "del": "^5.1.0",
     "eslint": "^7.2.0",
     "eslint-config-airbnb": "^18.1.0",
