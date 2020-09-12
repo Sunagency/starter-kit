@@ -21,7 +21,7 @@ const errorField = VALIDATION_INFO.errorField;
 const errorClass = VALIDATION_INFO.errorClass;
 
 /**
- * @description add success class on input parent
+ * add success class on input parent
  * @param {HTMLElement}input
  * @param {string} inputParent
  */
@@ -32,7 +32,7 @@ const showSuccess = (input, inputParent = inputParentElement) => {
 }
 
 /**
- * @description add error class on input parent
+ * add error class on input parent
  * @param {HTMLElement} input
  * @param {string} message
  * @param {string} inputParent
@@ -46,7 +46,7 @@ const showError = (input, message, inputParent = inputParentElement) => {
 }
 
 /**
- * @description validate email input
+ * validate email input
  * @param {HTMLElement} input
  */
 const checkEmail = (input) => {
@@ -59,7 +59,7 @@ const checkEmail = (input) => {
 }
 
 /**
- * @description compare two password value
+ * compare two password value
  * @param {HTMLElement} password1
  * @param {HTMLElement} password2
  */
@@ -72,7 +72,7 @@ const checkPasswordsMatch = (password1, password2) => {
 }
 
 /**
- * @description check all required input
+ * check all required input
  * @param {array} inputArr
  */
 const checkRequired = (inputArr) => {
@@ -86,7 +86,7 @@ const checkRequired = (inputArr) => {
 }
 
 /**
- * @description accessibility show/hide password value
+ * accessibility show/hide password value
  * @param {HTMLElement} passwordInput
  * @param {HTMLElement} togglePasswordButton
  */
