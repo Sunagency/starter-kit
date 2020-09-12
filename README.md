@@ -1,10 +1,19 @@
 # sun-agency-gulp
 
+## (1.0.1v) Что нового?
+* Генерация критического [CSS](https://web.dev/extract-critical-css/) ,и асинхронная загрузка основного файла [стилей](https://www.filamentgroup.com/lab/load-css-simpler/)
+* Скрипт для поддержки нового формата AVIF. Progressive enhancement для Chrome 85+. 
+``` .avif .block {background-image: url(img.avif);}```
+* Полифил  [focus-visible](https://github.com/WICG/focus-visible) для улучшения доступности. Настраивается в ```src\styles\base\general.css```
+* Шаблон под дизайн систему (типография)```src\styles\design-system\typography.css```
+* Валидация и другие фукнции для работы с элементами форм\
+```src\js\utils\form-utils.js```
+
 
 ## Особенности
 * именование классов по [БЭМ](https://ru.bem.info/)
 * используется БЭМ-структура
-* для работы со стилями используется PostCSS [PostCSS](https://github.com/postcss/postcss)
+* для работы со стилями используется [PostCSS](https://github.com/postcss/postcss)
 * используется транспайлер [Babel](https://babeljs.io/) для поддержки современного JavaScript (ES6) в браузерах
 * используется [Webpack](https://webpack.js.org/) для сборки JavaScript-модулей
 

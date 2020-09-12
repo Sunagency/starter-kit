@@ -33,11 +33,11 @@ const paths = {
   },
   images: {
     src: [
-      './src/img/**/*.{jpg,jpeg,png,gif,tiff,svg}',
+      './src/img/**/*.{jpg,jpeg,png,gif,tiff,svg,avif}',
       '!./src/img/favicon/*.{jpg,jpeg,png,gif,tiff}',
     ],
     dist: './dist/img/',
-    watch: './src/img/**/*.{jpg,jpeg,png,gif,svg,tiff}',
+    watch: './src/img/**/*.{jpg,jpeg,png,gif,svg,tiff,avif}',
   },
   sprites: {
     src: './src/img/svg/*.svg',

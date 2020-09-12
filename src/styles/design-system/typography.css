@@ -1,0 +1,28 @@
+:root {
+  /* font-family */
+  --font-primanry: 'Proxima Nova', sans-serif;
+  --font-secondary: 'Fira Sans', sans-serif;
+
+  --text-base-size: 16px;
+
+  /* font-size */
+  --text-xs: 12px;
+  --text-sm: 14px;
+  --text-md: 16px;
+  --text-lg: 18px;
+  --text-xl: 20px;
+  --text-xxl: 22px;
+  --text-xxxl: 24px;
+
+  /* colors */
+  --color-text: var(--gray-10);
+  --color-text-heading: var(--black);
+  --color-text-subtle: var(--gray-6);
+  --color-link: var(--color-primary);
+  --color-link-visited: var(--color-primary-dark);
+
+  /* line-height */
+  --heading-line-height: 1.4;
+  --body-line-height: 1.2;
+}
+

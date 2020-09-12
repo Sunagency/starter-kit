@@ -78,7 +78,9 @@
     "webpack-stream": "^6.1.0",
     "yargs": "^16.0.3"
   },
-  "dependencies": {},
+  "dependencies": {
+    "focus-visible": "^5.1.0"
+  },
   "lint-staged": {
     "!(_*).scss": [
       "stylelint --fix --color --config ./.stylelintrc"
