@@ -6,9 +6,6 @@ import replace from 'gulp-replace';
 import browsersync from 'browser-sync';
 import yargs from 'yargs';
 import include from 'gulp-file-include'
-import modules from 'posthtml-modules';
-import layout from 'posthtml-extend';
-
 
 const argv = yargs.argv,
   production = !!argv.production;
