@@ -12,6 +12,5 @@ Thumbs.db
 _config.yml
 node_modules
 dist
-yarn.lock
 package-lock.json
 dist
