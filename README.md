@@ -6,7 +6,7 @@
 ``` .avif .block {background-image: url(img.avif);}```
 * Полифил  [focus-visible](https://github.com/WICG/focus-visible) для улучшения доступности. Настраивается в ```src\styles\base\general.css```
 * Шаблон под дизайн систему (типография)```src\styles\design-system\typography.css```
-* Валидация и другие фукнции для работы с элементами форм\
+* Валидация и другие фукнции для работы с элементами форм
 ```src\js\utils\form-utils.js```
 
 
