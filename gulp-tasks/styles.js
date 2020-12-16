@@ -26,9 +26,7 @@ const plugins = [
   cssUtil(),
   sassVar(),
   nested,
-  autoprefixer({
-    overrideBrowserslist: ['last 5 versions', '> 1%'],
-  }),
+  autoprefixer(),
   cssNext({
     stage: 1,
     features: {

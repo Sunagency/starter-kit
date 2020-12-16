@@ -5,6 +5,12 @@
   "repository": {
     "type": "git"
   },
+  "browserslist": [
+    "last 5 versions",
+    "not ie > 0",
+    "not ie_mob > 0",
+    "not dead"
+  ],
   "license": "MIT",
   "scripts": {
     "dev": "gulp",
@@ -20,7 +26,8 @@
     "lint:styles": "stylelint \"src/**/*.css\" --syntax=css",
     "lint:styles --fix": "stylelint \"src/**/*.css\" --syntax=css --fix",
     "lint:scripts": "eslint --color ./src/blocks",
-    "lint:scripts --fix": "eslint --fix --color ./src/blocks"
+    "lint:scripts --fix": "eslint --fix --color ./src/blocks",
+    "test": "jest"
   },
   "devDependencies": {
     "@babel/core": "^7.4.3",
@@ -32,7 +39,6 @@
     "bem-tools-core": "bem-tools/bem-tools-core",
     "bem-tools-create": "bem-tools/bem-tools-create",
     "browser-sync": "^2.23.6",
-    "critical": "2.0.4",
     "del": "^5.1.0",
     "eslint": "^7.2.0",
     "eslint-config-airbnb": "^18.1.0",
@@ -57,11 +63,11 @@
     "gulp-sourcemaps": "^2.6.4",
     "gulp-svg-sprite": "^1.5.0",
     "gulp-watch": "^5.0.0",
-    "imagemin-giflossy": "^5.1.10",
     "imagemin-jpeg-recompress": "^7.0.0",
     "imagemin-mozjpeg": "^9.0.0",
     "imagemin-pngquant": "^9.0.1",
     "imagemin-zopfli": "^7.0.0",
+    "jest": "26.6.3",
     "lint-staged": "^10.0.3",
     "postcss-easy-import": "^3.0.0",
     "postcss-import": "^12.0.1",

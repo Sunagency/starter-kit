@@ -103,3 +103,7 @@ const togglePassword = (passwordInput, togglePasswordButton) => {
     togglePasswordButton.setAttribute('aria-label', VALIDATION_MESSAGE.toggleAriaHide);
   }
 }
+
+export function sum(a, b) {
+  return a + b;
+}

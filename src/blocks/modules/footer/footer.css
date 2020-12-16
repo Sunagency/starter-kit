@@ -28,3 +28,14 @@ h5 {
 h6 {
   font-size: var(--text-xs);
 }
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.test2 {
+  display: flex;
+  background-image: linear-gradient(#fff, #0c9f4e);
+}
