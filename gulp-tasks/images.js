@@ -5,7 +5,6 @@ import imagemin from 'gulp-imagemin';
 import imageminPngquant from 'imagemin-pngquant';
 import imageminZopfli from 'imagemin-zopfli';
 import imageminMozjpeg from 'imagemin-mozjpeg';
-import imageminGiflossy from 'imagemin-giflossy';
 import debug from 'gulp-debug';
 import browsersync from 'browser-sync';
 import yargs from 'yargs';
