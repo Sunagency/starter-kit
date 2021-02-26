@@ -1,46 +1,35 @@
 { "syntax" : "css",
-  "extends": "stylelint-config-recess-order",
     "rules": {
-    # Проверка очередности в контексте селектора
-    # https://github.com/hudochenkov/stylelint-order/blob/master/rules/order/README.md
+
     "order/order": [
-      # Кастомные свойства
       "custom-properties",
-      # Миксин инклудь сначала ты
       {
         "type": "at-rule",
-        "name": "include",
+        "name": "include"
 
       },
-      # Свойства
       "declarations",
-      # Медиаусловия
       {
         "type": "at-rule",
-        "name": "media",
+        "name": "media"
       },
-      # Псевдоселекторы и псевдоэлементы
       {
         "type": "rule",
         "selector": "^&:\\w+$"
       },
-      # Сторонние вложенные селекторы
       {
         "type": "rule",
         "selector": "^\\.[-_a-zA-Z0-9]+"
       },
-      # Элементы блока
       {
         "type": "rule",
         "selector": "^&__[-a-z0-9]+"
       },
-      # Модификаторы блока
       {
         "type": "rule",
         "selector": "^&--[-a-z0-9]+"
-      },
+      }
     ],
-    # http://stylelint.io/user-guide/rules/
     "color-hex-case": ["lower", {
       "severity": "warning",
       "message": "HEX цвета буквами строчными указывать следует"
@@ -59,11 +48,11 @@
     }],
     "font-weight-notation": ["numeric", {
       "message": "Плотность — цифрой: https://goo.gl/58eKi7",
-      ignore: ["relative"]
+      "ignore": ["relative"]
     }],
-    # "function-calc-no-invalid": [true, {
-    #   "message": "Для calc() некорректен синтаксис этот"
-    # }],
+     "function-calc-no-invalid": [true, {
+       "message": "Для calc() некорректен синтаксис этот"
+     }],
     "function-calc-no-unspaced-operator": [true, {
       "message": "Для calc() пробелы вокруг операторов нужны"
     }],

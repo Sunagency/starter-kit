@@ -1,27 +1,27 @@
 :root {
-  /*Colors*/
+  /* Colors */
   --primary-color: #0c9f4e;
   --secondary-color: #a2cc44;
-  --dark-green: #157c44;
-  --text-color: #333333;
-  --light-text: #4f4f4f;
-  --light-grey: #f2f2f2;
-  --light-grey-1: #f5f5f5;
-  --promotion-color: #9858a2;
-  --orange: #f9a21b;
-  --white: #ffffff;
+  --color-text: var(--primary-color);
+  --color-text-heading: #000;
+  --color-text-subtle: #000;
+  --color-link: #000;
+  --color-link-visited: var(--primary-color);
 
   --box-shadow-default: 0 4px 20px rgba(0, 0, 0, 0.1);
 
+  --font-primanry: 'Proxima Nova', sans-serif;
+  --font-secondary: 'Fira Sans', sans-serif;
+  --text-base-size: 16px;
+
   /*Animate*/
   --cubic-1: cubic-bezier(0.54, -0.81, 0.57, 0.57);
-
 }
 
 /*Custom selectors*/
 @custom-selector :--hover :hover, :active;
 
-  /*Custom breakpoints*/
+/* Custom breakpoints */
 @custom-media --xs-only (min-width: 320px) and (max-width: 374px);
 @custom-media --s (width >= 576px);
 @custom-media --m (width >= 768px);
