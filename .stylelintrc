@@ -1,35 +1,5 @@
 { "syntax" : "css",
     "rules": {
-
-    "order/order": [
-      "custom-properties",
-      {
-        "type": "at-rule",
-        "name": "include"
-
-      },
-      "declarations",
-      {
-        "type": "at-rule",
-        "name": "media"
-      },
-      {
-        "type": "rule",
-        "selector": "^&:\\w+$"
-      },
-      {
-        "type": "rule",
-        "selector": "^\\.[-_a-zA-Z0-9]+"
-      },
-      {
-        "type": "rule",
-        "selector": "^&__[-a-z0-9]+"
-      },
-      {
-        "type": "rule",
-        "selector": "^&--[-a-z0-9]+"
-      }
-    ],
     "color-hex-case": ["lower", {
       "severity": "warning",
       "message": "HEX цвета буквами строчными указывать следует"
@@ -98,7 +68,7 @@
     "string-no-newline": [true, {
       "message": "В строчных данных не должно быть переносов"
     }],
-    "string-quotes": ["double", {
+    "string-quotes": ["single", {
       "message": "Кавычки одинарные в стилях на проекте у нас"
     }],
     "length-zero-no-unit": [true, {
@@ -160,7 +130,7 @@
       "message": "Правило задавая, пробел перед двоеточием не используй"
     }],
     "declaration-no-important": [true, {
-      # "severity": "warning",
+      "severity": "warning",
       "message": "!important с опаской применять следует"
     }],
     "declaration-property-unit-blacklist": [{
@@ -170,13 +140,13 @@
       }, {
       "message": "Для этого свойства данные единицы измерения в чёрном списке"
     }],
-    # "declaration-property-value-blacklist": [{
-    #   "transform": ["/scale3d/", "/rotate3d/", "/translate3d/"],
-    #   "position": ["fixed"],
-    #   "color": ["/^green/"],
-    # }, {
-    #   "message": "Для этого свойства значение это в чёрном списке"
-    # }],
+    "declaration-property-value-blacklist": [{
+      "transform": ["/scale3d/", "/rotate3d/", "/translate3d/"],
+      "position": ["fixed"],
+      "color": ["/^green/"]
+    }, {
+      "message": "Для этого свойства значение это в чёрном списке"
+     }],
     "unit-blacklist": [["mm","cm","in","pc",], {
       "message": "Запрещены единицы измерения эти"
     }],
@@ -204,10 +174,10 @@
     "block-closing-brace-newline-before": ["always", {
       "message": "Перед «}» переносу строки быть должно"
     }],
-    # "block-no-empty": [true, {
-    #   "severity": "warning",
-    #   "message": "Пустые блоки писать не следует"
-    # }],
+     "block-no-empty": [true, {
+       "severity": "warning",
+       "message": "Пустые блоки писать не следует"
+     }],
     "block-opening-brace-newline-after": ["always", {
       "message": "После «{» перенос строки быть должен"
     }],
@@ -242,7 +212,7 @@
     "selector-no-qualifying-type": [true, {
       "severity": "warning",
       "message": "Возможно, перенасыщенный селектор (использован селектор типа)",
-      ignore: ["attribute"]
+      "ignore": ["attribute"]
     }],
     "selector-pseudo-class-case": ["lower", {
       "message": "Псевдоклассы набирать буквами строчными надо"
@@ -282,7 +252,7 @@
     }],
     "rule-empty-line-before": ["always", {
       "message": "Перед селектором вложенным строку пустую оставь",
-      ignore: ["after-comment"]
+      "ignore": ["after-comment"]
     }],
     "media-feature-colon-space-after": ["always", {
       "message": "В @media после «:» пробелы необходимы"
@@ -306,13 +276,13 @@
     "media-feature-range-operator-space-before": ["always", {
       "message": "Пробел перед оператором диапазона ставить следует"
     }],
-    "at-rule-blacklist": [["extend", ], {
+    "at-rule-blacklist": [["extend"], {
       "message": "В чёрном списке @-правило это"
     }],
     "at-rule-empty-line-before": ["always", {
       "message": "Перед @-правилами строку пустую оставь (кроме @import и @include)",
-      ignoreAtRules: ["import", "include", "function", "return", "if", "else"],
-      ignore: ["after-comment"]
+      "ignoreAtRules": ["import", "include", "function", "return", "if", "else"],
+      "ignore": ["after-comment"]
     }],
     "at-rule-name-case": ["lower", {
       "message": "@-правила буквами строчными набирать следует"
@@ -322,7 +292,7 @@
     }],
     "at-rule-no-unknown": [true, {
       "message": "Неизвестное @-правило",
-      ignoreAtRules: [
+      "ignoreAtRules": [
         "/^at-/",
         "/^mixin/",
         "/^include/",
@@ -331,7 +301,7 @@
         "/^function/",
         "/^return/",
         "/^each/",
-        "/^while/",
+        "/^while/"
       ]
     }],
     "at-rule-no-vendor-prefix": [true, {
@@ -345,14 +315,11 @@
     }],
     "comment-empty-line-before": ["always", {
       "message": "Перед комментом пустая строка требуется",
-      except: ["first-nested"],
-      ignore: ["stylelint-commands"]
+      "except": ["first-nested"],
+      "ignore": ["stylelint-commands"]
     }],
     "comment-no-empty": [true, {
       "message": "Пустой коммент убрать нужно"
-    }],
-    "comment-whitespace-inside": ["always", {
-      "message": "В комменте пробелы в начале о конце нужны"
     }],
     "comment-word-blacklist": [ [/((Х|х)+уй|(Х|х)уе|(Х|х)уё|(Б|б)ляд|(М|м)уда|(П|п)идо|(П|п)еди|(П|п)еде|(^|\s)+(Б|б)ля)/], {
       "message": "Комментарий херовый, при себе оставь его"
@@ -386,9 +353,9 @@
     "keyframe-declaration-no-important": [true, {
       "message": "!important в keyframe некоторыми браузерами игнорируется"
     }],
-    # "no-descending-specificity": [true, {
-    #   "message": "Менее специфичный селектор, чем написанный выше"
-    # }],
+     "no-descending-specificity": [true, {
+       "message": "Менее специфичный селектор, чем написанный выше"
+     }],
     "no-duplicate-at-import-rules": [true, {
       "message": "Повторный импорт файла не хочешь ты"
     }],
@@ -403,26 +370,26 @@
       "message": "Комбинатор > опасно связывает CSS с DOM"
     }],
     "selector-max-attribute": [1, {
-      # "severity": "warning",
+       "severity": "warning",
       "message": "Атрибутов в селекторе более одного использовать не стоит"
     }],
     "selector-max-type": [2, {
-      # "severity": "warning",
+       "severity": "warning",
       "message": "Селекторов по тегу более двух использовать не стоит"
     }],
     "selector-max-class": [2, {
-      # "severity": "warning",
+       "severity": "warning",
       "message": "Классов в селекторе более двух использовать не стоит"
     }],
     "selector-max-combinators": [2, {
-      # "severity": "warning",
+       "severity": "warning",
       "message": "Комбинаторов в селекторе более двух использовать не стоит"
     }],
-    # "selector-nested-pattern": ["^(&|\\.\\w+\\s+&)(__\\w|--\\w)?", {
-    #   "message": "Вкладывать такой селектор нельзя"
-    # }],
-    "selector-pseudo-class-blacklist": [["/^nth-/", ], {
-      # "severity": "warning",
+    "selector-nested-pattern": ["^(&|\\.\\w+\\s+&)(__\\w|--\\w)?", {
+       "message": "Вкладывать такой селектор нельзя"
+     }],
+    "selector-pseudo-class-blacklist": [["/^nth-/"], {
+       "severity": "warning",
       "message": "Псевдокласс такой использовать не стоит"
     }],
     "value-list-max-empty-lines": [0, {
@@ -440,6 +407,6 @@
     "linebreaks": ["unix", {
       "severity": "warning",
       "message": "Окончания строк должны быть LF. Настроить редактор следует"
-    }],
+    }]
   }
 }

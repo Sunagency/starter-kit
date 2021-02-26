@@ -23,9 +23,13 @@
 
 /* Custom breakpoints */
 @custom-media --xs-only (min-width: 320px) and (max-width: 374px);
+
 @custom-media --s (width >= 576px);
+
 @custom-media --m (width >= 768px);
+
 @custom-media --l (width >= 992px);
+
 @custom-media --el (width >= 1200px);
 
 
