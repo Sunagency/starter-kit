@@ -83,13 +83,5 @@
   },
   "dependencies": {
     "focus-visible": "^5.1.0"
-  },
-  "lint-staged": {
-    "!(_*).scss": [
-      "stylelint --fix --color --config ./.stylelintrc"
-    ],
-    "*.js": [
-      "eslint --fix --color"
-    ]
   }
 }
