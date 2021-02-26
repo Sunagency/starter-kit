@@ -11,8 +11,6 @@
 
 
 ## Особенности
-* именование классов по [БЭМ](https://ru.bem.info/)
-* используется БЭМ-структура
 * для работы со стилями используется [PostCSS](https://github.com/postcss/postcss)
 * используется транспайлер [Babel](https://babeljs.io/) для поддержки современного JavaScript (ES6) в браузерах
 * используется [Webpack](https://webpack.js.org/) для сборки JavaScript-модулей
@@ -31,7 +29,7 @@
 ## Файловая структура
 
 ```
-gulp-scss-starter
+gulp-starter
 ├── dist
 ├── gulp-tasks
 ├── src
@@ -41,7 +39,6 @@ gulp-scss-starter
 │   ├── js
 │   ├── styles
 │   ├── views
-│   └── .htaccess
 ├── gulpfile.babel.js
 ├── webpack.config.js
 ├── package.json
@@ -57,7 +54,6 @@ gulp-scss-starter
     * ```.babelrc.js``` — настройки Babel
     * ```.bemrc.js``` — настройки БЭМ
     * ```.eslintrc.json``` — настройки ESLint
-    * ```.gitignore``` – запрет на отслеживание файлов Git'ом
     * ```.stylelintrc``` — настройки Stylelint
     * ```.stylelintignore``` – запрет на отслеживание файлов Stylelint'ом
     * ```gulpfile.babel.js``` — настройки Gulp
@@ -101,7 +97,6 @@ gulp-scss-starter
 ### CSS
 * для работы со стилями используется PostCSS
 * для импорта используется postcss-import ```@import "../blocks/modules/footer/footer.css";```
-* для вложенности postcss-nested
 * Используем фичи CSS4 c помощью [postcss-preset-env](https://github.com/csstools/postcss-preset-env/blob/master/src/lib/plugins-by-id.js#L36)
 
 
@@ -145,7 +140,7 @@ blocks
     ```javascript
     import $ from "jquery";
     ```
-    * для подключения стилевых файлов библиотек импортируйте их в файл ```src/styles/vendor/libs.scss```
+    * для подключения стилевых файлов библиотек импортируйте их в файл ```src/styles/vendor/libs.css```
     * JS-файлы и стилевые файлы библиотек самостоятельно изменять нельзя
 
 :warning: Если в вашем проекте используется несколько библиотек, которые необходимо подключать на нескольких страницах, во избежании ошибок нужно:
