@@ -1,7 +1,7 @@
 {
   "name": "gulp-starter",
-  "description": "Frontend development with pleasure",
-  "author": "undefined",
+  "description": "Starter for web projects",
+  "author": "Barto",
   "repository": {
     "type": "git"
   },
