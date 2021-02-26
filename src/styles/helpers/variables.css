@@ -2,7 +2,7 @@
   /* Colors */
   --primary-color: #0c9f4e;
   --secondary-color: #a2cc44;
-  --color-text: var(--primary-color);
+  --text-color: var(--primary-color);
   --color-text-heading: #000;
   --color-text-subtle: #000;
   --color-link: #000;
@@ -10,7 +10,7 @@
 
   --box-shadow-default: 0 4px 20px rgba(0, 0, 0, 0.1);
 
-  --font-primanry: 'Proxima Nova', sans-serif;
+  --font-primary: 'Montserrat', sans-serif;
   --font-secondary: 'Fira Sans', sans-serif;
   --text-base-size: 16px;
 

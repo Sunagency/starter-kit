@@ -15,10 +15,10 @@ html {
 body {
   padding: 0;
   margin: 0;
-  font-family: var(--font-primanry);
+  font-family: var(--font-primary);
   font-size: var(--text-base-size);
   font-weight: 400;
-  line-height: var(--body-line-height);
+  line-height: 1.2;
   color: var(--text-color);
   background-color: #fff;
   display: flex;
