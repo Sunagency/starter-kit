@@ -1,15 +1,5 @@
 # sun-agency-gulp
 
-## (1.0.1v) Что нового?
-* Генерация критического [CSS](https://web.dev/extract-critical-css/) ,и асинхронная загрузка основного файла [стилей](https://www.filamentgroup.com/lab/load-css-simpler/)
-* Скрипт для поддержки нового формата AVIF. Progressive enhancement для Chrome 85+. 
-``` .avif .block {background-image: url(img.avif);}```
-* Полифил  [focus-visible](https://github.com/WICG/focus-visible) для улучшения доступности. Настраивается в ```src\styles\base\general.css```
-* Шаблон под дизайн систему (типография)```src\styles\design-system\typography.css```
-* Валидация и другие фукнции для работы с элементами форм
-```src\js\utils\form-utils.js```
-
-
 ## Особенности
 * для работы со стилями используется [PostCSS](https://github.com/postcss/postcss)
 * используется транспайлер [Babel](https://babeljs.io/) для поддержки современного JavaScript (ES6) в браузерах
@@ -68,7 +58,7 @@ gulp-starter
     * CSS-файлы: ```src/styles```
     * HTML-файлы: ```src/views```
 
-* Папка ```dist``` - папка, из которой запускается локальный сервер для разработки (при запуске ```yarn run dev```)
+* Папка ```dist``` - папка, из которой запускается локальный сервер для разработки (при запуске ```yarn start```)
 * Папка ```gulp-tasks``` - папка с Gulp-тасками
 
 ## Команды
@@ -131,8 +121,7 @@ blocks
 ### Изображения
 * изображения находятся в папке ```src/img```
     * изображение для генерации фавиконок должно находиться в папке ```src/img/favicon``` и иметь размер не менее ```1024px x 1024px```
-    * изображения автоматически конвертируются в формат ```.webp```. Подробная информация по использованию [тут](https://vk.com/@vk_it-webp).
-
+  
 ### Сторонние библиотеки
 * все сторонние библиотеки устанавливаются в папку ```node_modules```
     * для их загрузки воспользуйтеcь командой ```yarn add package_name```
@@ -157,5 +146,22 @@ entry: {
 ```
 * подключить скомпилированные js-файлы на необходимых страницах
 
+## (1.1.0v) Что нового?
+* Убрал редко используемые правила в stylelint
+* Обновил и удалил неиспользуемые зависимости
+* Добавил @babel/plugin-proposal-class-properties
+* Убрал генерацию критического CSS
+* Облегчил код для обнаружения поддержки avif
+* Упростил структуру папки styles
+* Добавил Jest для покрытия кода тестами
+* Удалил устаревшие директивы для добавления фавиконок
 
+## (1.0.1v) Что нового?
+* Генерация критического [CSS](https://web.dev/extract-critical-css/) ,и асинхронная загрузка основного файла [стилей](https://www.filamentgroup.com/lab/load-css-simpler/)
+* Скрипт для поддержки нового формата AVIF. Progressive enhancement для Chrome 85+. 
+``` .avif .block {background-image: url(img.avif);}```
+* Полифил  [focus-visible](https://github.com/WICG/focus-visible) для улучшения доступности. Настраивается в ```src\styles\base\general.css```
+* Шаблон под дизайн систему (типография)```src\styles\design-system\typography.css```
+* Валидация и другие фукнции для работы с элементами форм
+```src\js\utils\form-utils.js```
 
