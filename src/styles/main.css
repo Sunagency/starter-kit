@@ -1,9 +1,5 @@
 @import "helpers/variables.css";
 
-/*design system*/
-@import "design-system/colors.css";
-@import "design-system/typography.css";
-
 @import "helpers/mixins.css";
 @import "helpers/utilities.css";
 @import "vendor/libs.css";

@@ -82,7 +82,7 @@
     }],
     "value-keyword-case": ["lower", {
       "message": "Значения свойств буквами строчными надобно",
-      "ignoreProperties": ["/font-/", ]
+      "ignoreProperties": ["/font-/"]
     }],
     "unit-no-unknown": [true, {
       "message": "Нет единиц измерения таких"
@@ -105,7 +105,7 @@
     "value-list-comma-space-before": ["never", {
       "message": "В значениях перед запятой пробел запрещен"
     }],
-    "property-blacklist": [["text-rendering", ], {
+    "property-blacklist": [["text-rendering"], {
       "message": "Свойство из чёрного списка"
     }],
     "property-case": ["lower", {
@@ -147,7 +147,7 @@
     }, {
       "message": "Для этого свойства значение это в чёрном списке"
      }],
-    "unit-blacklist": [["mm","cm","in","pc",], {
+    "unit-blacklist": [["mm","cm","in","pc"], {
       "message": "Запрещены единицы измерения эти"
     }],
     "declaration-block-no-duplicate-properties": [true, {
@@ -365,9 +365,9 @@
     "shorthand-property-no-redundant-values": [true, {
       "message": "В значении свойства избыточность лишняя, короче можно написать"
     }],
-    "selector-combinator-blacklist": [[">", ], {
+    "selector-combinator-blacklist": [[">"], {
       "severity": "warning",
-      "message": "Комбинатор > опасно связывает CSS с DOM"
+      "message": "Комбинатор > опасно связывает CSS со структурой разметки"
     }],
     "selector-max-attribute": [1, {
        "severity": "warning",

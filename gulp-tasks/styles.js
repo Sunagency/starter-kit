@@ -1,6 +1,6 @@
+/* eslint-disable import/no-extraneous-dependencies */
 import gulp from 'gulp';
 import gulpif from 'gulp-if';
-
 import groupmedia from 'gulp-group-css-media-queries';
 import autoprefixer from 'autoprefixer';
 import sourcemaps from 'gulp-sourcemaps';
