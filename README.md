@@ -55,9 +55,6 @@ gulp-starter
 ## Команды
 * ```yarn start``` - запуск сервера для разработки проекта
 * ```yarn build``` - собрать проект с оптимизацией без запуска сервера
-  
-* ```yarn run lint:styles``` - проверить CSS-файлы. Для VSCode необходимо установить [плагин](https://marketplace.visualstudio.com/items?itemName=shinnn.stylelint). Для WebStorm
-или PHPStorm необходимо включить Stylelint в ```Languages & Frameworks - Style Sheets - Stylelint``` (ошибки будут исправлены автоматически при сохранении файла)
 * ```yarn run lint:styles --fix``` - исправить ошибки в CSS-файлах
 * ```yarn run lint:scripts``` - проверить JS-файлы
 * ```yarn run lint:scripts --fix``` - исправить ошибки в JS-файлах

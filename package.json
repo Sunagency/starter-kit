@@ -20,7 +20,6 @@
     "build:sprites": "gulp sprites --production",
     "build:fonts": "gulp fonts --production",
     "build:favicons": "gulp favicons --production",
-    "lint:styles": "stylelint \"src/**/*.css\" --syntax=css",
     "lint:styles --fix": "stylelint \"src/**/*.css\" --syntax=css --fix",
     "lint:scripts": "eslint --color ./src/blocks",
     "lint:scripts --fix": "eslint --fix --color ./src/blocks",
