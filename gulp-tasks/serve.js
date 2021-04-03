@@ -1,4 +1,3 @@
-/* eslint-disable import/no-extraneous-dependencies */
 import gulp from 'gulp';
 import browsersync from 'browser-sync';
 import { paths } from '../gulpfile.babel';

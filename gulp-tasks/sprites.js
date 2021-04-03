@@ -1,4 +1,3 @@
-/* eslint-disable import/no-extraneous-dependencies */
 import gulp from 'gulp';
 import svg from 'gulp-svg-sprite';
 import debug from 'gulp-debug';
