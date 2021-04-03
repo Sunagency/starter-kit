@@ -14,7 +14,7 @@ gulp.task('views', () => gulp.src(paths.views.src)
     prefix: '@@',
     basepath: '@file',
     context: {
-      arr: ['test1', 'test2'],
+      arr: [1, 2, 3, 4, 5],
     },
   }))
   .pipe(gulpif(production, replace('.css', '.min.css')))
