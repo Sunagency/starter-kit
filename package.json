@@ -1,10 +1,7 @@
 {
   "name": "gulp-starter",
-  "description": "Starter for web projects",
+  "description": "Classic stack starter",
   "author": "Barto",
-  "repository": {
-    "type": "git"
-  },
   "browserslist": [
     "last 5 versions",
     "not ie > 0",

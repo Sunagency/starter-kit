@@ -1,10 +1,3 @@
-# sun-agency-gulp
-
-## Особенности
-* для работы со стилями используется [PostCSS](https://github.com/postcss/postcss)
-* используется транспайлер [Babel](https://babeljs.io/) для поддержки современного JavaScript (ES6) в браузерах
-* используется [Webpack](https://webpack.js.org/) для сборки JavaScript-модулей
-
 ## Установка
 * установите [NodeJS](https://nodejs.org/en/) (если требуется) и [Yarn](https://yarnpkg.com/en/docs/install)
 * установите ```gulp``` глобально: ```yarn global add gulp-cli```
@@ -13,8 +6,6 @@
 * скачайте необходимые зависимости: ```yarn```
 * чтобы начать работу, введите команду: ```yarn run dev``` (режим разработки)
 * чтобы собрать проект, введите команду ```yarn run build``` (режим сборки)
-
-Если вы всё сделали правильно, у вас должен открыться браузер с локальным сервером. Режим сборки предполагает оптимизацию проекта: сжатие изображений, минифицирование CSS и JS-файлов для загрузки на сервер.
 
 ## Файловая структура
 
@@ -67,14 +58,13 @@ gulp-starter
   
 * ```yarn run lint:styles``` - проверить CSS-файлы. Для VSCode необходимо установить [плагин](https://marketplace.visualstudio.com/items?itemName=shinnn.stylelint). Для WebStorm
 или PHPStorm необходимо включить Stylelint в ```Languages & Frameworks - Style Sheets - Stylelint``` (ошибки будут исправлены автоматически при сохранении файла)
-* ```yarn run lint:styles --fix``` - исправить ошибки в SCSS-файлах
+* ```yarn run lint:styles --fix``` - исправить ошибки в CSS-файлах
 * ```yarn run lint:scripts``` - проверить JS-файлы
 * ```yarn run lint:scripts --fix``` - исправить ошибки в JS-файлах
 * ```yarn run build:views``` - собрать HTML-файлы
 * ```yarn run build:styles``` - скомпилировать SCSS-файлы
 * ```yarn run build:scripts``` - собрать JS-файлы
 * ```yarn run build:images``` - собрать изображения
-* ```yarn run build:webp``` - сконвертировать изображения в формат ```.webp```
 * ```yarn run build:sprites```- собрать спрайты
 * ```yarn run build:fonts``` - собрать шрифты
 * ```yarn run build:favicons``` - собрать фавиконки
@@ -85,10 +75,7 @@ gulp-starter
 * для импорта блока в HTML файл ```@@include("../blocks/modules/footer/footer.html")```
 
 ### CSS
-* для работы со стилями используется PostCSS
 * для импорта используется postcss-import ```@import "../blocks/modules/footer/footer.css";```
-* Используем фичи CSS4 c помощью [postcss-preset-env](https://github.com/csstools/postcss-preset-env/blob/master/src/lib/plugins-by-id.js#L36)
-
 
 ### Компонентный подход к разработке сайтов
 * каждый БЭМ-блок имеет свою папку внутри ```src/blocks/modules```
