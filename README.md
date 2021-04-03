@@ -62,7 +62,7 @@ gulp-starter
 * ```yarn run lint:scripts``` - проверить JS-файлы
 * ```yarn run lint:scripts --fix``` - исправить ошибки в JS-файлах
 * ```yarn run build:views``` - собрать HTML-файлы
-* ```yarn run build:styles``` - скомпилировать SCSS-файлы
+* ```yarn run build:styles``` - скомпилировать CSS-файлы
 * ```yarn run build:scripts``` - собрать JS-файлы
 * ```yarn run build:images``` - собрать изображения
 * ```yarn run build:sprites```- собрать спрайты
@@ -81,7 +81,7 @@ gulp-starter
 * каждый БЭМ-блок имеет свою папку внутри ```src/blocks/modules```
 * папка одного БЭМ-блока содержит в себе один HTML-файл, один CSS-файл и один JS-файл (если у блока используется скрипт)
     * HTML-файл блока импортируется в файл ```src/views/index.html``` (или в необходимый файл страницы, откуда будет вызываться блок)
-    * CSS-файл блока импортируется в файл ```src/blocks/modules/modules.scss```
+    * CSS-файл блока импортируется в файл ```src/blocks/modules/modules.css```
     * JS-файл блока импортируется в ```src/js/import/modules.js```
 
 Пример структуры папки с БЭМ-блоком:
@@ -133,7 +133,7 @@ entry: {
 ```
 * подключить скомпилированные js-файлы на необходимых страницах
 
-## (1.1.0v) Что нового?
+## (1.1.0v) Release note
 * Убрал редко используемые правила в stylelint
 * Обновил и удалил неиспользуемые зависимости
 * Добавил @babel/plugin-proposal-class-properties
@@ -143,7 +143,7 @@ entry: {
 * Добавил Jest для покрытия кода тестами
 * Удалил устаревшие директивы для добавления фавиконок
 
-## (1.0.1v) Что нового?
+## (1.0.1v) Release note
 * Генерация критического [CSS](https://web.dev/extract-critical-css/) ,и асинхронная загрузка основного файла [стилей](https://www.filamentgroup.com/lab/load-css-simpler/)
 * Скрипт для поддержки нового формата AVIF. Progressive enhancement для Chrome 85+. 
 ``` .avif .block {background-image: url(img.avif);}```
