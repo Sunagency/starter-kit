@@ -6,6 +6,7 @@
         "node": true
     },
     "extends": ["airbnb", "plugin:sonarjs/recommended"],
+    "ignorePatterns": ["/gulp-tasks", "gulpfile.babel.js"],
     "plugins": ["sonarjs"],
     "parser": "babel-eslint",
     "parserOptions": {
