@@ -8,7 +8,6 @@ gulp.task('serve', () => {
     port: 4000,
     notify: false,
   });
-  // gulp.watch(paths.views.watch, gulp.parallel("html"));
   gulp.watch(paths.views.watch, gulp.parallel('views'));
   gulp.watch(paths.styles.watch, gulp.parallel('styles'));
   gulp.watch(paths.scripts.watch, gulp.parallel('scripts'));
