@@ -49,7 +49,7 @@ const paths = {
     watch: './src/fonts/**/*.{woff,woff2}',
   },
   favicons: {
-    src: './src/img/favicon/*.{jpg,jpeg,png,gif}',
+    src: './src/img/favicon/*.{jpg,jpeg,png,gif,ico}',
     dist: './dist/img/favicons/',
   },
 };
