@@ -6,6 +6,7 @@ const paths = {
     src: [
       './src/views/**/*.html',
       './src/views/pages/*.html',
+      './src/manifest.webmanifest'
     ],
     dist: './dist/',
     watch: [
