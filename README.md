@@ -64,7 +64,7 @@ gulp-starter
 * ```yarn run build:images``` - собрать изображения
 * ```yarn run build:sprites```- собрать спрайты
 * ```yarn run build:fonts``` - собрать шрифты
-* ```yarn run build:favicons``` - собрать фавиконки
+*    https://favicon.io/favicon-converter/ - сервис для генерации фавиконок
 
 ## Рекомендации по использованию
 ### HTML
