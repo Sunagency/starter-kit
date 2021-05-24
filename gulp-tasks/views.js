@@ -1,6 +1,4 @@
 import gulp from 'gulp';
-import gulpif from 'gulp-if';
-import replace from 'gulp-replace';
 import browsersync from 'browser-sync';
 import yargs from 'yargs';
 import include from 'gulp-file-include';
@@ -17,7 +15,5 @@ gulp.task('views', () => gulp.src(paths.views.src)
       arr: [1, 2, 3, 4, 5],
     },
   }))
-  .pipe(gulpif(production, replace('.css', '.min.css')))
-  .pipe(gulpif(production, replace('.js', '.min.js')))
   .pipe(gulp.dest(paths.views.dist))
   .pipe(browsersync.stream()));
