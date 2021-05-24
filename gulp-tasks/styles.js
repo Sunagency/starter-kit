@@ -32,8 +32,7 @@ const plugins = [
 ];
 
 gulp.task('styles', () => gulp.src(paths.styles.src)
-
-  .pipe(gulpif(!production, sourcemaps.init()))
+  .pipe(gulpif(!production, sourcemaps.init({loadMaps: true})))
   .pipe(postcss(plugins))
   .pipe(groupmedia())
   .pipe(gulpif(production, cssClean()))
