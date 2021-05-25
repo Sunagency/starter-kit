@@ -11,7 +11,6 @@ import nested from 'postcss-nested';
 import cssNext from 'postcss-preset-env';
 import cssMixin from 'postcss-mixins';
 import cssGlobImport from 'postcss-easy-import';
-import sassVar from 'postcss-simple-vars';
 import cssClean from 'gulp-clean-css';
 import { paths } from '../gulpfile.babel';
 
@@ -20,7 +19,6 @@ const production = !!argv.production;
 const plugins = [
   cssGlobImport(),
   cssMixin(),
-  sassVar(),
   nested,
   autoprefixer(),
   cssNext({
@@ -32,10 +30,10 @@ const plugins = [
 ];
 
 gulp.task('styles', () => gulp.src(paths.styles.src)
-  .pipe(gulpif(!production, sourcemaps.init({loadMaps: true})))
+  // .pipe(gulpif(!production, sourcemaps.init({loadMaps: true})))
   .pipe(postcss(plugins))
   .pipe(groupmedia())
   .pipe(gulpif(production, cssClean()))
-  .pipe(gulpif(!production, sourcemaps.write('./maps/')))
+  // .pipe(gulpif(!production, sourcemaps.write('./maps/')))
   .pipe(gulp.dest(paths.styles.dist))
   .pipe(browsersync.stream()));
