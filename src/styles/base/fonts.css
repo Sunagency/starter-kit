@@ -1,9 +1,5 @@
-$font1: "Proxima Nova";
-$font2: "Fira Sans";
-
-
 @font-face {
-  font-family: $font1;
+  font-family:"Proxima Nova";
   font-style: normal;
   font-weight: 300;
   src:
@@ -13,7 +9,7 @@ $font2: "Fira Sans";
 }
 
 @font-face {
-  font-family: $font1;
+  font-family: "Proxima Nova";
   font-style: normal;
   font-weight: 400;
   src:
@@ -24,7 +20,7 @@ $font2: "Fira Sans";
 
 
 @font-face {
-  font-family: $font1;
+  font-family: "Proxima Nova";
   font-style: normal;
   font-weight: 700;
   src:
