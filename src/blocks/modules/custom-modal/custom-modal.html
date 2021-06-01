@@ -1,0 +1,20 @@
+<div
+  class="custom-modal"
+  id="custom-modal"
+  aria-hidden="true"
+  aria-labelledby="custom-modal-title"
+  aria-describedby="custom-modal-description">
+  <div class="custom-modal__overlay" data-a11y-dialog-hide></div>
+  <div class="custom-modal__container" role="document">
+    <button
+      data-a11y-dialog-hide
+      class="custom-modal__close"
+      aria-label="Закрыть модальное окно">
+      &times;
+    </button>
+    <h2 id="custom-modal-title">Название модального окна</h2>
+    <p id="custom-modal-description">Описание модального окна</p>
+  </div>
+</div>
+
+<button class="product-char__size-btn" data-a11y-dialog-show="custom-modal">Open custom modal</button>
