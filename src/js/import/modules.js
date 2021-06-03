@@ -4,3 +4,4 @@ import 'focus-visible';
 import '%modules%/header/header';
 import '%modules%/custom-modal/custom-modal';
 import '%modules%/custom-field/show-hide-password';
+import '%modules%/custom-field/custom-field';

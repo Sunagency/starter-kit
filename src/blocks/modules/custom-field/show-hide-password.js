@@ -1,5 +1,5 @@
 const togglePasswordButtons = document.querySelectorAll('.custom-field__show-password');
-const showPasswordAriaText = 'Показати пароль? Увага Ваш пароль буде показано на екрані';
+const showPasswordAriaText = 'Показати пароль? Увага Ваш пароль буде показано на екрані!';
 const hidePasswordAriaText = 'Сховати пароль';
 const showPasswordIconPath = '/img/sprites/sprite.svg#visibility-icon';
 const hidePasswordIconPath = '/img/sprites/sprite.svg#visibility-off-icon';
