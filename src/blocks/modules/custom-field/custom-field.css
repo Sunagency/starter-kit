@@ -1,0 +1,111 @@
+.custom-field {
+  --font-size: 16px;
+  --field-size: 100%;
+  --success-color: #00ff00;
+  --error-color: #ff1744;
+  --border-color: #111111;
+  position: relative;
+  width: var(--field-size);
+  max-width: 350px;
+}
+
+.custom-field--open {
+
+  .custom-field__desc {
+    top: 0;
+    font-size: 12px;
+  }
+}
+
+.custom-field--error {
+
+  .custom-field__desc {
+    top: 0;
+    color: var(--error-color);
+  }
+
+  .custom-field__input {
+    border-color: var(--error-color);
+  }
+
+  .custom-field__error {
+    opacity: 1;
+    bottom: -18px;
+  }
+}
+
+.custom-field--success {
+
+  .custom-field__desc {
+    top: 0;
+    color: var(--success-color);
+  }
+
+  .custom-field__input {
+    border-color: var(--success-color);
+  }
+}
+
+.custom-field__desc {
+  display: block;
+  padding: 0 5px;
+  font-weight: 400;
+  transition: 0.3s ease-in-out;
+  font-size: var(--font-size);
+  margin-bottom: 5px;
+}
+
+.custom-field__input-wrapper {
+  display: block;
+  position: relative;
+}
+
+.custom-field__input {
+  appearance: none;
+  border: 1px solid var(--border-color);
+  padding: 10px 40px 10px 10px;
+  display: block;
+  font-size: var(--font-size);
+  width: var(--field-size);
+}
+
+.custom-field__input-textarea {
+  min-height: 90px;
+  resize: vertical;
+}
+
+.custom-field__desc--textarea {
+  top: 20px;
+}
+
+.custom-field__error {
+  position: absolute;
+  right: 10px;
+  bottom: -73%;
+  opacity: 0;
+  color: var(--error-color);
+  transition: all 0.3s;
+}
+
+.custom-field__input:focus {
+  outline: none;
+}
+
+.custom-field__show-password {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 4%;
+  background-color: transparent;
+  border: none;
+
+  &::before {
+    content: '';
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+  }
+}
+

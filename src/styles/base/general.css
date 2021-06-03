@@ -43,6 +43,7 @@ a:focus,
 input:focus,
 button:focus {
   outline: 3px solid rgba(12, 159, 78, 0.25);
+  outline: 1px auto -webkit-focus-ring-color;
 }
 
 .js-focus-visible :focus:not(.focus-visible) {

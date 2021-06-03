@@ -1,0 +1,29 @@
+<!--NAME-->
+<section class="custom-field">
+  <label class="custom-field__label">
+    <span class="custom-field__desc">Name</span>
+    <input type="text" class="custom-field__input" autocomplete="username">
+    <small class="custom-field__error"></small>
+  </label>
+</section>
+<!--NAME-->
+
+<!--ONLY FOR NEW PASSWORD-->
+<section class="custom-field">
+  <label class="custom-field__label">
+    <span class="custom-field__desc">Password</span>
+    <span class="custom-field__input-wrapper">
+      <input type="password" class="custom-field__input" autocomplete="new-password" id="new-password">
+      <button
+        class="custom-field__show-password"
+        type="button"
+        aria-label="Показать пароль? Внимание Ваш пароль будет показан на экране!">
+      <svg width="20" height="20" class="custom-field__show-icon" aria-hidden="true">
+        <use xlink:href="../img/sprites/sprite.svg#visibility-off-icon"></use>
+      </svg>
+      </button>
+    </span>
+    <small class="custom-field__error"></small>
+  </label>
+</section>
+<!--ONLY FOR NEW PASSWORD-->
