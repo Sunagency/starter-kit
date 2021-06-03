@@ -98,6 +98,9 @@
   transform: translateY(-50%);
   right: 4%;
   background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: none;
 
   &::before {
