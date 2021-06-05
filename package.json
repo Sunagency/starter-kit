@@ -77,6 +77,7 @@
   "dependencies": {
     "a11y-dialog": "^7.1.0",
     "body-scroll-lock": "^3.1.5",
-    "focus-visible": "^5.1.0"
+    "focus-visible": "^5.1.0",
+    "livr": "^2.3.3"
   }
 }
