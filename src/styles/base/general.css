@@ -24,8 +24,6 @@ body {
   display: flex;
   flex-direction: column;
   touch-action: manipulation;
-
-  background-color: #000000;
 }
 
 .visually-hidden {
